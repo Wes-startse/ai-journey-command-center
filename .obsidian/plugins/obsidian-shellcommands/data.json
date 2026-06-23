@@ -1,0 +1,125 @@
+{
+  "settings_version": "0.23.0",
+  "obsidian_command_palette_prefix": "Execute: ",
+  "preview_variables_in_command_palette": true,
+  "show_autocomplete_menu": true,
+  "error_message_duration": 20,
+  "notification_message_duration": 10,
+  "default_shells": {},
+  "working_directories": {},
+  "environment_variable_path_augmentations": {},
+  "shell_commands": [
+    {
+      "id": "radar-mercado",
+      "platform_specific_commands": {
+        "default": "claude -p \"Roda o agente radar-mercado e salve o resultado como nota em output/.\""
+      },
+      "shells": {},
+      "alias": "Radar de mercado",
+      "icon": "radar",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": { "stdin": null },
+      "output_handlers": {
+        "stdout": { "handler": "notification", "convert_ansi_code": true },
+        "stderr": { "handler": "notification", "convert_ansi_code": true }
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "gerar-pautas",
+      "platform_specific_commands": {
+        "default": "claude -p \"Roda o agente gerador-de-pautas e salve as pautas em output/.\""
+      },
+      "shells": {},
+      "alias": "Gerar pautas da semana",
+      "icon": "lightbulb",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": { "stdin": null },
+      "output_handlers": {
+        "stdout": { "handler": "notification", "convert_ansi_code": true },
+        "stderr": { "handler": "notification", "convert_ansi_code": true }
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "analise-concorrente",
+      "platform_specific_commands": {
+        "default": "claude -p \"Roda o agente analise-concorrente para o concorrente que vou indicar e salve em output/.\""
+      },
+      "shells": {},
+      "alias": "Analisar concorrente",
+      "icon": "telescope",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": { "stdin": null },
+      "output_handlers": {
+        "stdout": { "handler": "notification", "convert_ansi_code": true },
+        "stderr": { "handler": "notification", "convert_ansi_code": true }
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "relatorio-semanal",
+      "platform_specific_commands": {
+        "default": "claude -p \"Roda o agente relatorio-semanal e salve em output/.\""
+      },
+      "shells": {},
+      "alias": "Relatório semanal",
+      "icon": "file-text",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": { "stdin": null },
+      "output_handlers": {
+        "stdout": { "handler": "notification", "convert_ansi_code": true },
+        "stderr": { "handler": "notification", "convert_ansi_code": true }
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "open-browser",
+      "platform_specific_commands": {
+        "default": "cmd /c start \"\" https://www.google.com",
+        "darwin": "open https://www.google.com",
+        "linux": "xdg-open https://www.google.com"
+      },
+      "shells": {},
+      "alias": "Abrir navegador",
+      "icon": "globe",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": { "stdin": null },
+      "output_handlers": {
+        "stdout": { "handler": "ignore", "convert_ansi_code": true },
+        "stderr": { "handler": "notification", "convert_ansi_code": true }
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    }
+  ]
+}

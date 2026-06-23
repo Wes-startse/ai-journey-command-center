@@ -1,0 +1,107 @@
+/* Command Center — visual estilo Agentic OS (dark + laranja).
+   Aplica só nas notas com cssclass: command-center. */
+
+.command-center {
+  --cc-bg: #14110f;
+  --cc-card: #211c18;
+  --cc-border: #322a24;
+  --cc-orange: #FE840C;
+  --cc-red: #e2433a;
+  --cc-text: #f0e9e2;
+  --cc-muted: #8a7f74;
+  --cc-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.markdown-preview-view.command-center,
+.markdown-source-view.mod-cm6.command-center .cm-content {
+  background: var(--cc-bg);
+  color: var(--cc-text);
+}
+
+/* Título principal */
+.command-center h1 {
+  font-family: var(--cc-mono);
+  color: var(--cc-orange);
+  letter-spacing: 0.14em;
+  font-size: 1.5em;
+  border: none;
+}
+
+/* Títulos de seção: barra lateral laranja + monoespaçado */
+.command-center h2 {
+  font-family: var(--cc-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.82em;
+  color: var(--cc-muted);
+  border-left: 3px solid var(--cc-orange);
+  padding-left: 10px;
+  margin-top: 1.6em;
+}
+
+/* Linha de data (inline code do Dataview) */
+.command-center code {
+  background: transparent;
+  color: var(--cc-red);
+  font-family: var(--cc-mono);
+  letter-spacing: 0.05em;
+}
+
+.command-center blockquote {
+  border-left: 2px solid var(--cc-border);
+  color: var(--cc-muted);
+  font-size: 0.88em;
+}
+
+/* Botões do Meta Bind: pílula escura, hover laranja */
+.command-center .mb-button button {
+  background: #1c1815;
+  border: 0.5px solid #3a312a;
+  border-radius: 8px;
+  color: #cabfb4;
+  font-family: var(--cc-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
+  padding: 8px 14px;
+  transition: all 0.12s ease;
+}
+.command-center .mb-button button:hover {
+  background: #2a231d;
+  color: var(--cc-orange);
+  border-color: var(--cc-orange);
+}
+/* Botão primário: preenchido em laranja */
+.command-center .mb-button[data-style="primary"] button,
+.command-center .mb-button button.mod-cta {
+  background: var(--cc-orange);
+  color: #14110f;
+  border-color: var(--cc-orange);
+}
+
+/* Tabelas do Dataview: cartão escuro */
+.command-center table {
+  background: var(--cc-card);
+  border: 0.5px solid var(--cc-border);
+  border-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+.command-center th {
+  font-family: var(--cc-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78em;
+  color: var(--cc-muted);
+  background: #1a1512;
+  border-bottom: 0.5px solid var(--cc-border);
+}
+.command-center td {
+  border-top: 0.5px solid var(--cc-border);
+  color: var(--cc-text);
+}
+.command-center a { color: var(--cc-orange); text-decoration: none; }
+
+/* Listas do Dataview com marcador laranja */
+.command-center ul > li::marker { color: var(--cc-orange); }
