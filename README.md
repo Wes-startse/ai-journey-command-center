@@ -2,8 +2,6 @@
 
 Vault inicial de **Second Brain de marketing/negócio** para a aula Agentic OS. O aluno baixa, abre no Obsidian, ativa os plugins e faz a configuração inicial com os prompts, ao vivo. A central já vem montada e os agentes de marketing já vêm prontos. Desktop-only.
 
-A versão "focada em aulas" é só do instrutor (mostrada pronta no início da aula como referência). Este pacote é o que a turma constrói: contexto de negócio.
-
 ---
 
 ## O que já vem pronto
@@ -32,21 +30,6 @@ Depois, a configuração inicial em sala é só ajustar os prompts dos agentes a
 
 ---
 
-## Para o instrutor: deixar os plugins pré-baixados (recomendado)
-
-Para o aluno só **ativar** (sem instalar da loja), o pacote precisa carregar os arquivos dos plugins. Faça isto **uma vez**, no seu computador, antes de publicar:
-
-1. Abra esta pasta como cofre no Obsidian.
-2. Instale os sete plugins pela loja (Community plugins → Browse).
-3. Feche o Obsidian. Os arquivos dos plugins agora estão em `.obsidian/plugins/<cada-plugin>/` (main.js, manifest.json, styles.css).
-4. Faça o commit de tudo (o `.gitignore` já mantém os plugins versionados).
-
-A partir daí, quem clonar o repo já recebe os plugins junto: no Obsidian é só ativar e recarregar.
-
-> Por que não já vem pronto neste pacote: os binários dos plugins são de terceiros e mudam de versão; o jeito certo e atualizado é você instalá-los uma vez e versioná-los. Leva 2 minutos e garante a versão atual.
-
----
-
 ## Pré-requisito do computador
 
 O Claude Code CLI instalado e no PATH (os botões chamam `claude`). Teste: `claude --version`.
@@ -69,7 +52,7 @@ Mac/Linux: troque a última por `open URL` / `xdg-open URL`.
 
 ---
 
-## Personalizar (o que a turma faz em sala)
+## Personalizar
 
 - **Ajustar um agente:** edite o arquivo em `.claude/agents/`. O texto abaixo do frontmatter é o cérebro dele. Adapte ao setor do aluno.
 - **Criar um agente novo:** no terminal embutido, rode `claude` e peça: "crie um agente em .claude/agents/ que [tarefa], gatilho [frase]".
@@ -80,18 +63,3 @@ Mac/Linux: troque a última por `open URL` / `xdg-open URL`.
 ## Detalhe: a pasta `.claude`
 
 O Obsidian esconde pastas que começam com ponto. O painel "Meus agentes" só enxerga `.claude/agents/` com o plugin **Hidden Folders Access** ativo (já está na lista). Alternativa: renomear para `Agents/` e trocar `FROM ".claude/agents"` por `FROM "Agents"` no `Command Center.md` (mas aí o Claude Code não descobre os agentes automaticamente).
-
----
-
-## Publicar no GitHub (instrutor)
-
-1. Crie o repositório (ex.: `command-center-marketing-starter`).
-2. Nesta pasta: `git init && git add -A && git commit -m "starter marketing"`.
-3. `git branch -M main && git remote add origin <url> && git push -u origin main`.
-4. Compartilhe o link; a turma usa "Download ZIP".
-
----
-
-## Próxima aula
-
-A evolução (rodar os agentes 24/7 numa VPS, com LLM local e MCP do Obsidian) fica para a próxima aula. A base markdown que você montou aqui continua sendo a mesma fonte de verdade lá.
