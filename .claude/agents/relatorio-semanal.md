@@ -1,7 +1,9 @@
 ---
 name: relatorio-semanal
 description: Monta o relatório da semana a partir do que entrou no vault. Use quando eu disser "relatório semanal", "fecha a semana" ou "resumo da semana".
-tools: [Read, Write]
+tools:
+  - Read
+  - Write
 model: sonnet
 mcpServers: []
 skills: []

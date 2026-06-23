@@ -1,0 +1,9 @@
+# Estado de UI / sessão do Obsidian (por máquina, não versionar)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Backups gerados automaticamente pelos plugins
+.obsidian/plugins/*/data-backup-*.json
+
+# Lixeira do Obsidian
+.trash/

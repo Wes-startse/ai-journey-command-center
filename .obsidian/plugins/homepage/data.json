@@ -1,5 +1,5 @@
 {
-  "version": "4.0.0",
+  "version": 4,
   "homepages": {
     "Main Homepage": {
       "value": "Command Center",
@@ -7,11 +7,12 @@
       "openOnStartup": true,
       "openMode": "Replace all open notes",
       "manualOpenMode": "Keep open notes",
-      "view": "Default view",
+      "view": "Reading view",
       "revertView": true,
       "openWhenEmpty": false,
       "refreshDataview": true,
       "autoCreate": false,
+      "autoScroll": false,
       "pin": false,
       "commands": [],
       "alwaysApply": false,
