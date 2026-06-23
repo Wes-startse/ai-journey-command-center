@@ -26,7 +26,7 @@
     {
       "id": "radar-mercado",
       "platform_specific_commands": {
-        "default": "claude --permission-mode acceptEdits -p \"Roda o agente radar-mercado e salve o resultado como nota em output/.\""
+        "default": "/home/weslleysilv4/.local/bin/claude --permission-mode acceptEdits -p \"Roda o agente radar-mercado e salve o resultado como nota em output/.\""
       },
       "shells": {},
       "alias": "Radar de mercado",
@@ -62,7 +62,7 @@
     {
       "id": "gerar-pautas",
       "platform_specific_commands": {
-        "default": "claude --permission-mode acceptEdits -p \"Roda o agente gerador-de-pautas e salve as pautas em output/.\""
+        "default": "/home/weslleysilv4/.local/bin/claude --permission-mode acceptEdits -p \"Roda o agente gerador-de-pautas e salve as pautas em output/.\""
       },
       "shells": {},
       "alias": "Gerar pautas da semana",
@@ -98,7 +98,7 @@
     {
       "id": "analise-concorrente",
       "platform_specific_commands": {
-        "default": "claude --permission-mode acceptEdits -p \"Roda o agente analise-concorrente para o concorrente que vou indicar e salve em output/.\""
+        "default": "/home/weslleysilv4/.local/bin/claude --permission-mode acceptEdits -p \"Roda o agente analise-concorrente para o concorrente que vou indicar e salve em output/.\""
       },
       "shells": {},
       "alias": "Analisar concorrente",
@@ -134,7 +134,7 @@
     {
       "id": "relatorio-semanal",
       "platform_specific_commands": {
-        "default": "claude --permission-mode acceptEdits -p \"Roda o agente relatorio-semanal e salve em output/.\""
+        "default": "/home/weslleysilv4/.local/bin/claude --permission-mode acceptEdits -p \"Roda o agente relatorio-semanal e salve em output/.\""
       },
       "shells": {},
       "alias": "Relatório semanal",
@@ -170,7 +170,7 @@
     {
       "id": "qualificador-leads",
       "platform_specific_commands": {
-        "default": "claude --permission-mode acceptEdits -p \"Roda o agente qualificador-leads para o nome + empresa que vou indicar e salve o briefing em output/.\""
+        "default": "/home/weslleysilv4/.local/bin/claude --permission-mode acceptEdits -p \"Roda o agente qualificador-leads para o nome + empresa que vou indicar e salve o briefing em output/.\""
       },
       "shells": {},
       "alias": "Qualificar lead",
@@ -206,7 +206,7 @@
     {
       "id": "revisor-de-copy",
       "platform_specific_commands": {
-        "default": "claude --permission-mode acceptEdits -p \"Roda o agente revisor-de-copy sobre o texto que vou indicar e salve a versao revisada em output/.\""
+        "default": "/home/weslleysilv4/.local/bin/claude --permission-mode acceptEdits -p \"Roda o agente revisor-de-copy sobre o texto que vou indicar e salve a versao revisada em output/.\""
       },
       "shells": {},
       "alias": "Revisar copy",
